@@ -41,7 +41,7 @@ variable "PublicSubnet2CIDR" {
 }
 
 variable "PrivateAppSubnet1CIDR" {
-    description = "IP Range (CIDR notation) for the public subnet in the first Availability Zone"
+    description = "IP Range (CIDR notation) for the private app subnet in the first Availability Zone"
     type = string
     default = "10.0.20.0/24"
     validation {
@@ -51,7 +51,7 @@ variable "PrivateAppSubnet1CIDR" {
 }
 
 variable "PrivateAppSubnet2CIDR" {
-    description = "IP Range (CIDR notation) for the public subnet in the second Availability Zone"
+    description = "IP Range (CIDR notation) for the private app subnet in the second Availability Zone"
     type = string
     default = "10.0.21.0/24"
     validation {
@@ -61,7 +61,7 @@ variable "PrivateAppSubnet2CIDR" {
 }
 
 variable "PrivateDBSubnet1CIDR" {
-    description = "IP Range (CIDR notation) for the public subnet in the first Availability Zone"
+    description = "IP Range (CIDR notation) for the private data subnet in the first Availability Zone"
     type = string
     default = "10.0.30.0/24"
     validation {
@@ -71,7 +71,7 @@ variable "PrivateDBSubnet1CIDR" {
 }
 
 variable "PrivateDBSubnet2CIDR" {
-    description = "IP Range (CIDR notation) for the public subnet in the second Availability Zone"
+    description = "IP Range (CIDR notation) for the private data subnet in the second Availability Zone"
     type = string
     default = "10.0.31.0/24"
     validation {
@@ -82,5 +82,5 @@ variable "PrivateDBSubnet2CIDR" {
 
 variable "watermark" {
     type = string
-    default = "https://github.com/stephenlf/AWS-Free-Tier-Three-Tier-WordPress"
+    default = "https://github.com/stephenlf/TerraformForAws-3TierFreeTierNetwork"
 }

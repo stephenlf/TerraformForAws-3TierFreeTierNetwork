@@ -110,7 +110,7 @@ resource "aws_subnet" "PrivateDBSubnet2" {
   }
 }
 
-resource "aws_default_security_group" "default" {
+resource "aws_default_security_group" "DefaultSecurityGroup" {
   vpc_id = aws_vpc.VPC.id
 
   # The same rules that AWS provides by default but under management by Terraform
